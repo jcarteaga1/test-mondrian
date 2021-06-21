@@ -1,0 +1,127 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    background-color: black;
+    width: 30vw;
+    height: 70vh;
+    display: grid;
+    border-width: 2px solid;
+    padding: 2px;
+    border-color: black ;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+.row_one{
+    display: grid;
+    grid-column: 1 / 4;
+    background-color: black;
+    grid-template-areas: 'myArea myArea . myArea5' 'myArea myArea . myArea5' 'myArea4 myArea6 myArea6 myArea6';
+}
+
+.row_one .one{
+    background-color: darkgreen;
+    grid-area: myArea;
+}
+
+.row_one .two{
+    background-color: darkseagreen;
+}
+
+.row_one .three{
+    background-color: dodgerblue;
+}
+
+.row_one .four{
+    background-color: gray;
+    grid-area: myArea4;
+}
+
+.row_one .five{
+    background-color: hotpink;
+    grid-area: myArea5;
+}
+
+.row_one .six{
+    background-color: khaki;
+    grid-area: myArea6;
+}
+
+.row_two{
+    display: grid;
+    background-color: black;
+    grid-template-areas: 'myArea . . .' 'myArea myArea5 myArea5 .' ;
+}
+
+.row_two .one{
+    background-color: cornflowerblue;
+    grid-area: myArea;
+}
+
+.row_two .two{
+    background-color: gray;
+}
+
+.row_two .three{
+    background-color: dodgerblue;
+}
+
+.row_two .four{
+    background-color: khaki;
+}
+
+.row_two .five{
+    background-color: hotpink;
+    grid-area: myArea5;
+}
+
+.row_two .six{
+    background-color: khaki;
+}
+
+.row_three{
+    display: grid;
+    background-color: black;
+    grid-template-areas: 'myArea myArea myArea2 myArea2' 'myArea myArea myArea2 myArea2' ;
+}
+
+.row_three .one{
+    background-color: cornflowerblue;
+    grid-area: myArea;
+}
+
+.row_three .two{
+    background-color: gray;
+    grid-area: myArea2;
+}
+
+.row_four{
+    display: grid;
+    background-color: black;
+    grid-template-areas: '. . myArea myArea' '. . myArea myArea' ;
+}
+
+.row_four .one{
+    background-color: black;
+    grid-area: myArea;
+}
+
+.row_four .two{
+    background-color: yellow;
+}
+
+.row_four .three{
+    background-color: yellow;
+}
+
+.row_four .four{
+    background-color: yellow;
+}
